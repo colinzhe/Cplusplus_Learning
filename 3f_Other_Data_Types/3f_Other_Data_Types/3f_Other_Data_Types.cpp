@@ -55,4 +55,33 @@ int main()
     std::getline(std::cin, mystr);
     std::stringstream(mystr) >> amix.c;
     std::cout << "Your char is: " << amix.c << '\n';
+
+	enum colors_t
+	{
+		black=1,
+		blue,
+		green,
+		cyan,
+		red,
+		purple,
+		yellow,
+		white
+	};
+
+	colors_t mycolor;
+
+	mycolor = blue;
+
+	std::cout << mycolor << std::endl;
+
+	enum class Colors
+	{
+		orange,
+		magenta,
+		navy
+	};
+
+	Colors mynewcolor;
+
+	mynewcolor = Colors::magenta;
 }
